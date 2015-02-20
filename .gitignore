@@ -1,0 +1,13 @@
+/Build/
+/Configuration/PackageStates.php
+/Configuration/README
+/Data/
+/Packages/Libraries/
+/Packages/Framework/
+/Web/
+/bin/
+/Readme.txt
+/Upgrading.txt
+/flow
+/flow.bat
+/.idea/
