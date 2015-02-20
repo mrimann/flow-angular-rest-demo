@@ -1,7 +1,22 @@
 {
-    "name": "typo3/flow-base-distribution",
+    "name": "mrimann/flow-angular-demo",
     "description": "TYPO3 Flow Base Distribution with an Angular REST demo package",
-    "license": "LGPL-3.0+",
+    "license": "MIT",
+    "keywords": [
+        "angular",
+        "rest",
+        "typo3flow",
+        "demo",
+        "tutorial"
+    ],
+    "authors": [
+      {
+        "name": "Mario Rimann",
+        "email": "mario@rimann.org",
+        "homepage": "http://rimann.org/",
+        "role": "Lead Developer"
+      }
+    ],
     "config": {
         "vendor-dir": "Packages/Libraries",
         "bin-dir": "bin"
