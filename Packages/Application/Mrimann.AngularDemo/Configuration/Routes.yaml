@@ -1,0 +1,12 @@
+#                                                                        #
+# Default routes configuration for the AngularDemo package               #
+#                                                                        #
+
+-
+  name: 'Welcome screen'
+  uriPattern: ''
+  defaults:
+    '@package':    'Mrimann.AngularDemo'
+    '@controller': 'Standard'
+    '@action':     'index'
+    '@format':     'html'
