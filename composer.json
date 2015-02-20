@@ -21,6 +21,11 @@
 		"vendor-dir": "Packages/Libraries",
 		"bin-dir": "bin"
 	},
+	"autoload": {
+	  	"psr-0": {
+			"Mrimann\\AngularDemo": "Packages/Application/Mrimann.AngularDemo/Classes"
+		}
+	},
 	"require": {
 		"typo3/flow": "2.3.*",
 		"doctrine/migrations": "@dev"
