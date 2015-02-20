@@ -23,14 +23,9 @@
 	},
 	"require": {
 		"typo3/flow": "2.3.*",
-		"typo3/welcome": "2.3.*",
 		"doctrine/migrations": "@dev"
 	},
 	"require-dev": {
-		"typo3/kickstart": "2.3.*",
-		"typo3/buildessentials": "2.3.*",
-		"phpunit/phpunit": "4.3.*",
-		"mikey179/vfsstream": "1.4.*"
 	},
 	"suggest": {
 		"ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"
