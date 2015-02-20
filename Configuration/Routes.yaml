@@ -14,11 +14,11 @@
 # informative welcome screen.
 
 -
-  name: 'Welcome'
-  uriPattern: '<WelcomeSubroutes>'
+  name: 'AngularDemo'
+  uriPattern: '<AngularDemoSubroutes>'
   subRoutes:
-    WelcomeSubroutes:
-      package: TYPO3.Welcome
+    AngularDemoSubroutes:
+      package: Mrimann.AngularDemo
 
 ##
 # Flow subroutes
