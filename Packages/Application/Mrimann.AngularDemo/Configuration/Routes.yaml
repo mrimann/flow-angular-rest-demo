@@ -10,3 +10,11 @@
     '@controller': 'Standard'
     '@action':     'index'
     '@format':     'html'
+
+-
+  name: 'AngularDemo API :: List of ideas'
+  uriPattern: 'api/v1/idea'
+  defaults:
+    '@package':    'Mrimann.AngularDemo'
+    '@controller': 'Api'
+    '@format':     'json'
