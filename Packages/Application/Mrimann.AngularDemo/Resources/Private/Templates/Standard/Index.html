@@ -4,4 +4,12 @@
 
 <f:section name="Content">
 
+	<div ng-controller="IdeaListCtrl">
+		<ul>
+			<li ng-repeat="idea in ideas">
+				{{idea.name}}
+			</li>
+		</ul>
+	</div>
+
 </f:section>
