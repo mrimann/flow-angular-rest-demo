@@ -13,10 +13,25 @@ use TYPO3\Flow\Annotations as Flow;
  */
 class Idea {
 	/**
+	 * @var \TYPO3\Flow\Persistence\PersistenceManagerInterface
+	 * @Flow\Inject
+	 */
+	protected $persistenceManager;
+
+	/**
 	 * The title
 	 * @var string
 	 */
 	protected $name;
+
+	/**
+	 * Returns the ID of this Idea
+	 *
+	 * @return string
+	 */
+	public function getId() {
+		return $this->persistenceManager->getIdentifierByObject($this);
+	}
 
 	/**
 	 * Gets the name of this idea

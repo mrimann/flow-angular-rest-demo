@@ -12,6 +12,8 @@ class ApiController extends \TYPO3\Flow\Mvc\Controller\RestController {
 
 	protected $defaultViewObjectName = 'TYPO3\\Flow\\Mvc\\View\\JsonView';
 
+	protected $resourceArgumentName = 'idea';
+
 	/**
 	 * @var \Mrimann\AngularDemo\Domain\Repository\IdeaRepository
 	 * @Flow\Inject
@@ -26,5 +28,12 @@ class ApiController extends \TYPO3\Flow\Mvc\Controller\RestController {
 
 		$ideas = $this->ideaRepository->findAll();
 		$this->view->assign('ideas', $ideas);
+	}
+
+	/**
+	 * @param \Mrimann\AngularDemo\Domain\Model\Idea $idea
+	 */
+	public function deleteAction(\Mrimann\AngularDemo\Domain\Model\Idea $idea) {
+		$this->ideaRepository->remove($idea);
 	}
 }

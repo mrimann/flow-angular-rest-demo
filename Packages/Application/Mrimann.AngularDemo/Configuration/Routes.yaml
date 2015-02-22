@@ -18,3 +18,10 @@
     '@package':    'Mrimann.AngularDemo'
     '@controller': 'Api'
     '@format':     'json'
+
+- name: 'AngularDemo API :: Single idea'
+  uriPattern: 'api/v1/idea/{idea.__identity}'
+  defaults:
+    '@package':     'Mrimann.AngularDemo'
+    '@controller':  'Api'
+    '@format':      'json'
