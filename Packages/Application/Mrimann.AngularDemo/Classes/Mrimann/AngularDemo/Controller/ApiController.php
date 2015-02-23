@@ -6,6 +6,7 @@ namespace Mrimann\AngularDemo\Controller;
  *                                                                        *
  *                                                                        */
 
+use Mrimann\AngularDemo\Domain\Model\Idea;
 use TYPO3\Flow\Annotations as Flow;
 
 class ApiController extends \TYPO3\Flow\Mvc\Controller\RestController {
@@ -35,5 +36,31 @@ class ApiController extends \TYPO3\Flow\Mvc\Controller\RestController {
 	 */
 	public function deleteAction(\Mrimann\AngularDemo\Domain\Model\Idea $idea) {
 		$this->ideaRepository->remove($idea);
+	}
+
+	/**
+	 * Surround the initialize action from the parent controller
+	 */
+	public function initializeCreateAction() {
+		// noop
+	}
+
+	/**
+	 * Create + Store a new idea
+	 *
+	 * @param void
+	 */
+	public function createAction() {
+		$idea = new Idea();
+
+		$data = $this->request->getArgument('idea');
+		$idea->setName($data['name']);
+
+		$this->ideaRepository->add($idea);
+
+		$this->view->setVariablesToRender(array('idea'));
+		$this->view->assign('idea', $idea);
+
+		$this->response->setStatus(201);
 	}
 }
