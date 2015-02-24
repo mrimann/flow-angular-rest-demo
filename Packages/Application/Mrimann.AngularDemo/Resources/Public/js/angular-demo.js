@@ -34,6 +34,9 @@ angularDemo.controller('IdeaListCtrl', ['$scope', '$interval', 'Idea', function(
 		Idea.save({idea: $scope.newIdea}, function(data) {
 			// success, so we can add it to the scope to list it
 			$scope.ideas.push(data);
+
+			// reset the form (to avoid posting the same idea again and again)
+			$scope.newIdea.name = '';
 		})
 	};
 }]);
