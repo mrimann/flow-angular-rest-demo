@@ -39,23 +39,12 @@ class ApiController extends \TYPO3\Flow\Mvc\Controller\RestController {
 	}
 
 	/**
-	 * Surround the initialize action from the parent controller
-	 */
-	public function initializeCreateAction() {
-		// noop
-	}
-
-	/**
 	 * Create + Store a new idea
 	 *
+	 * @param \Mrimann\AngularDemo\Domain\Model\Idea $idea
 	 * @param void
 	 */
-	public function createAction() {
-		$idea = new Idea();
-
-		$data = $this->request->getArgument('idea');
-		$idea->setName($data['name']);
-
+	public function createAction(\Mrimann\AngularDemo\Domain\Model\Idea $idea) {
 		$this->ideaRepository->add($idea);
 
 		$this->view->setVariablesToRender(array('idea'));
