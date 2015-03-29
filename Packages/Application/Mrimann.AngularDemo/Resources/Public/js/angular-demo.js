@@ -1,4 +1,4 @@
-var angularDemo = angular.module('angularDemo', ['angularDemoServices']);
+var angularDemo = angular.module('angularDemo', ['angularDemoServices', 'angular-loading-bar']);
 
 angularDemo.controller('IdeaListCtrl', ['$scope', '$interval', 'Idea', function($scope, $interval, Idea) {
 	// initial fetching of the ideas from the API
