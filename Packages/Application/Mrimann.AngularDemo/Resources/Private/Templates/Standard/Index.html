@@ -6,7 +6,7 @@
 
 	<div ng-controller="IdeaListCtrl">
 		<ul>
-			<li ng-repeat="idea in ideas">
+			<li ng-repeat="idea in ideas | orderBy:'name'">
 				{{idea.name}} <a href="#" ng-click="remove(idea)">delete</a>
 			</li>
 		</ul>
