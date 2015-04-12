@@ -14,6 +14,20 @@ This repo contains a TYPO3 Flow installation with a little Demo-App. The applica
 - point your webserver to the Web-Directory
 - access the application via your browser
 
+
+## Planned additions
+
+I guess this already serves as a base to see how to use AngularJS together with Flow - but I have some things in mind to add later on:
+
+- add form validation
+- add inline editing functionality
+- add a nice animation upon adding/updating/removing of entries
+- upgrade to AngularJS 1.4.0 final (currently on 1.4.0 RC 0)
+- evaluate and probably switch to use a View-Model
+- add automated testing of the JS-part of the application
+- add automated testing of the server-side API part
+
+
 ## How to contribute?
 
 Feel free to [file new issues](https://github.com/mrimann/flow-angular-rest-demo/issues) if you find a problem or to propose a new feature. If you want to contribute your time and submit an improvement, I'm very eager to look at your pull requests!
