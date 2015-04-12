@@ -20,6 +20,11 @@ Feel free to [file new issues](https://github.com/mrimann/flow-angular-rest-demo
 
 In case you want to discuss a new feature with me, just send me an [e-mail](mailto:mario@rimann.org).
 
+
+## Thanks
+
+Thanks to the folks involved with [Roketi](http://roketi.github.io/) I even started thinking about this way to approach the GUI application development. Also thanks to David Höckele for supporting this ideas in an internal project at [internezzo](http://www.internezzo.ch/) and Bastian Waidelich for answering a bunch of questions regarding the RestController in Flow and for reviewing the code I published.
+
 ## License
 
 Licensed under the permissive [MIT license](http://opensource.org/licenses/MIT) - have fun with it!
